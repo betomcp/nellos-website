@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="transparent">
+    <h4>Uma breve história</h4>
+    <div class="img">
+      <img [src]="imgUrl" alt="imagem" />
+    </div>
+    <div class="histories">
+      <div class="number">
+        <h5 id="h5-id" class="animationTitle">{{ histNumber }}</h5>
+        <div class="div_btns">
+          <button (click)="lastPage()"><i class='bx bx-chevron-left'></i></button>
+          <ng-container *ngFor="let color of dots; let i = index">
+            <div class="dot" (click)="jumpPage(i)" [style]="'background-color: ' + color + ';'"></div>
+          </ng-container>
+          <button (click)="nextPage()"><i class='bx bx-chevron-right'></i></button>
+        </div>
+      </div>
+      <h6 id="h6-id" class="animationTitle">{{ histTitle }}</h6>
+      <p id="p-id" class="animationText">{{ history }}</p>
+    </div>
+  </div>
+</div>

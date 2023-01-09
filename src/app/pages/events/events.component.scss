@@ -1,0 +1,152 @@
+:host {
+  width: 100%;
+
+  main {
+    width: 100%;
+    margin-top: 12vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .imgs {
+      width: 100%;
+      height: 55vh;
+      background-image: url(../../../assets/imgs/events-bg-1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .title {
+      background-color: rgba(0, 0, 0, 0.803);
+      max-width: 25%;
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      min-height: 23vh;
+      margin-top: -18vh;
+      color: white;
+      text-align: left;
+      padding: 2rem;
+
+      h1 {
+        font-family: 'park_lane_nfregular';
+        font-weight: 100;
+        font-size: 4rem;
+        letter-spacing: 5px;
+      }
+
+      h2 {
+        color: #a90b0e9b;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 2.6rem;
+        letter-spacing: 4px;
+      }
+    }
+
+    .text {
+      padding: 2rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 100;
+      letter-spacing: 3px;
+      width: 70%;
+
+      h3 {
+        color: white;
+        font-size: 2rem;
+        font-weight: 100;
+      }
+
+      p {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        color: white;
+      }
+    }
+
+    .infos {
+      width: 70%;
+      box-shadow: 0 0 2px black;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 1rem 1.8rem;
+
+
+      .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+          padding: 0 0 1rem 0;
+          font-size: 1.3rem;
+          color: white;
+        }
+      }
+
+      .parking,
+      .size {
+
+        i {
+          font-size: 1.3rem;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        color: white;
+        font-weight: 100;
+        font-size: 1.34rem;
+
+        p {
+          padding: .2rem 0;
+        }
+      }
+
+      .size {
+        width: 29%;
+      }
+    }
+
+    .celphone {
+
+      padding: 2rem 0;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-weight: 100;
+      font-size: 1.4rem;
+
+      h4 {
+        padding: 1rem;
+        letter-spacing: 5px;
+        font-weight: 100;
+        font-size: 2.3rem;
+        font-family: 'park_lane_nfregular';
+      }
+
+      padding-bottom: 2rem;
+    }
+
+    footer {
+      color: white;
+      padding: 0 0 2rem 0;
+
+      h5 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        font-size: 2.3rem;
+      }
+
+      h6 {
+        letter-spacing: 5px;
+        font-weight: 100;
+        font-size: 2.3rem;
+        font-family: 'park_lane_nfregular';
+      }
+    }
+  }
+}

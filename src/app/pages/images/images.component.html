@@ -1,0 +1,14 @@
+<app-header></app-header>
+<main>
+  <div class="images" [style]="imgs[imgIndex].imagUrl">
+    <h1>{{imgs[imgIndex].title}}</h1>
+  </div>
+  <div class="btns">
+    <button (click)="lastImg()"><i class='bx bx-chevron-left'></i></button>
+    <ng-container *ngFor="let color of dots; let i = index">
+      <div class="dot" (click)="jumpPage(i)" [style]="'background-color: ' + color + ';'"></div>
+    </ng-container>
+    <button (click)="nextImg()"><i class='bx bx-chevron-right'></i></button>
+  </div>
+  <h2>non quello che entra</h2>
+</main>
